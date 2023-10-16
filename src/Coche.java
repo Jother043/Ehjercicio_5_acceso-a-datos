@@ -17,7 +17,6 @@ public class Coche {
         this.marca = marca;
         this.modelo = modelo;
         this.matricula = matricula;
-        coches = new ArrayList<>();
     }
 
     public Coche() {
@@ -50,19 +49,13 @@ public class Coche {
         this.matricula = matricula;
     }
 
-    public static List<Coche> getCoches(Coche c) {
-        coches = new ArrayList<>();
-        coches.add(c);
-        return coches;
-    }
 
     @Override
     public String toString() {
-        return "Coche{" +
-                "marca='" + marca + '\'' +
-                ", modelo='" + modelo + '\'' +
-                ", matricula='" + matricula + '\'' +
-                '}';
+        return "Coche " +
+                "marca:'" + marca + '\'' +
+                " modelo:'" + modelo + '\'' +
+                " matricula:'" + matricula + '\'';
     }
 
 

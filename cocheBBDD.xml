@@ -10,9 +10,4 @@
         <matricula>1234CBD</matricula>
         <modelo>Xsara</modelo>
     </coche>
-    <coche>
-        <marca>Audi</marca>
-        <matricula>4574FFD</matricula>
-        <modelo>S3</modelo>
-    </coche>
 </coches>

@@ -28,14 +28,18 @@ public class ExtraerXML {
         }
     }
 
+    /**
+     * Recupera un coche de un fichero XML
+     *
+     * @throws JAXBException
+     */
     public static void recuperarCocheDeXml() throws JAXBException {
         try {
             File file = new File("coche.xml");
             JAXBContext jaxbContext = JAXBContext.newInstance(Coche.class);
             Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
             Coche coche = (Coche) jaxbUnmarshaller.unmarshal(file);
-            Coche.getCoches(coche);
-            System.out.println(Coche.getCoches(coche));
+            System.out.println(Coche.coches.toString());
         } catch (JAXBException e) {
             e.printStackTrace();
         }
