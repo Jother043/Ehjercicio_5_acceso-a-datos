@@ -23,7 +23,7 @@ public class CrearXml {
 
         try {
             guardarListaCoches(listaCoches);
-            xmlToListaCoches();
+            xmlToCoche();
         } catch (JAXBException e) {
             throw new RuntimeException(e);
         }
